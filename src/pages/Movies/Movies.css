@@ -1,0 +1,48 @@
+body {
+  background-color: #101010;
+}
+
+.movies {
+  display: flex;
+  padding: 150px 0px 100px 0px;
+  margin: 0px 40px;
+  background-color: #101010;
+  flex-direction: column;
+}
+
+.movies-filters {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.movies-filters select {
+  border-radius: 5px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.pagination button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #233a50 !important;
+  font-family: 'Nunito', sans-serif;
+  color: #abb7c4;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.pagination button:disabled {
+  background-color: #ddd;
+  cursor: not-allowed;
+}
+
+.pagination .page-number {
+  color: #abb7c4;
+}

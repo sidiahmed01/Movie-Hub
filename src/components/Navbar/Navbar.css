@@ -1,0 +1,111 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  width: -webkit-fill-available;
+  background-color: #162431;
+  color: #fff;
+  z-index: 10;
+  padding: 0 100px;
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  color: #cdc7c7 !important;
+}
+
+.navbar-links {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 20px;
+}
+
+.navbar-links li {
+  position: relative;
+}
+
+.navbar-links li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 14px;
+  text-transform: uppercase;
+  padding: 5px;
+  transition: color 0.3s ease;
+}
+
+.navbar-links li a:hover {
+  color: #096ea5;
+}
+
+.navbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.navbar-actions .login {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+/* Hamburger Menu */
+.hamburger-menu {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.hamburger-menu .line {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+
+  .navbar-links,
+  .navbar-actions {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: #101010;
+    width: 100%;
+    padding: 15px;
+  }
+
+  .navbar {
+    justify-content: flex-start;
+  }
+
+  .navbar-links.active,
+  .navbar-actions.active {
+    display: none;
+  }
+
+  .hamburger-menu {
+    display: flex;
+  }
+
+  .navbar-links li {
+    margin: 10px 0;
+  }
+
+  .navbar-actions {
+    align-items: flex-start;
+  }
+
+  .navbar-actions .signup {
+    width: 100%;
+    text-align: center;
+  }
+}

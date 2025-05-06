@@ -1,0 +1,48 @@
+.favorites {
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .favorites h1 {
+    margin-bottom: 2rem;
+  }
+  
+  .favorites .movies-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }.favorites {
+    background-color: #101010;
+    display: flex;
+    align-items: flex-start;
+    padding: 150px 90px 100px 90px;
+    flex-direction: column;
+    color: white;
+  }
+  
+  .favorites h2 {
+    margin-bottom: 20px;
+  }
+  
+  .favorite-card {
+    position: relative;
+  }
+  
+  .remove-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #d6111e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 12px;
+  }
+  
+  .remove-btn:hover {
+    background-color: #d6111e;
+  }
+  

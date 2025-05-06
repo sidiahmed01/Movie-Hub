@@ -1,0 +1,78 @@
+.search-movie {
+  position: relative;
+}
+
+.suggestions {
+  position: absolute;
+  top: 45px;
+  left: 0;
+  width: 100%;
+  border-radius: 5px;
+  max-height: 200px;
+  overflow-y: auto;
+  z-index: 10;
+  border: none;
+  background-color: #233a50 !important;
+  font-family: 'Nunito', sans-serif;
+  color: #abb7c4;
+  font-weight: 300;
+  text-transform: none;
+  border: 2px solid #020d18;
+  border-radius: 8px;
+  padding: 0px 15px;
+  list-style: none;
+}
+
+.suggestions li {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.suggestions li:hover {
+  background-color: #f0f0f0;
+}
+
+.search-history {
+  margin-top: 20px;
+}
+
+.search-history h4 {
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #888;
+}
+
+.search-history ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.search-history li {
+  padding: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  color: #555;
+}
+
+.search-history li:hover {
+  text-decoration: underline;
+  color: #000;
+}
+
+
+.search-bar {
+  height: 36px;
+  border: none;
+  background-color: #233a50 !important;
+  font-family: 'Nunito', sans-serif;
+  color: #abb7c4;
+  font-weight: 300;
+  text-transform: none;
+  border: 2px solid #020d18;
+  border-radius: 8px;
+  border-bottom-left-radius: 0px;
+  border-top-left-radius: 0px;
+  width: 350px;
+  padding: 0px 15px;
+}
